@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - FLAG=f13{n0t_th1s_fl4g}
+    ports:
+      - "36936:4000"
